@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html>
+<title>PROJECT 46</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+
+<body class="background" style="font-family: 'Fira Sans', sans-serif">
+
+    <div class="w3-sidebar w3-bar-block hcmut w3-card" style="width:120px">
+        <h5 class="w3-bar-item" style="font-family: Kanit; padding-top: 20px !important;padding-bottom: 20px !important;">MENU</h5>
+        <button class="w3-bar-item w3-button tablink butt-font" onclick="openLink(event, 'Overview')" id="defaultOpen">OVERVIEW</button>
+        <button class="w3-bar-item w3-button tablink butt-font" onclick="openLink(event, 'Application')">APPLICATION</button>
+        <button class="w3-bar-item w3-button tablink butt-font" onclick="openLink(event, 'Types')">TYPES</button>
+        <button class="w3-bar-item w3-button tablink butt-font" onclick="openLink(event, 'Compare')">COMPARISON</button>
+        <button class="w3-bar-item w3-button tablink butt-font" onclick="openLink(event, 'Potential')">POTENTIAL</button>
+        <img src="Logo_BK.png" class="hcmut-img"> <br>
+    </div>
+
+    <div style="margin-left:120px">
+
+        <div style="text-align: left">
+            <br>
+            <b class="header-hcmut">Ho Chi Minh City University of Technology</b>
+            <p style="word-spacing: 5px;line-height: 0px; padding-left: 24px; ">Project 46: Application of artificial intelligence to health care</p>
+        </div>
+        <hr style="border-color: #a2dbffef;border-width: 5px;">
+
+
+        <div id="Overview" class="w3-container city w3-animate-opacity" style="display: none;text-align: justify; ">
+            <h2 class="heading">Overview of current AI</h2> <br style="line-height: 12px;">
+            <div class="w3-panel w3-light-grey">
+                <span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>
+                <p class="w3-xlarge" style="margin-top:-40px">
+                    <i>We are currently experiencing the fourth industrial revolution, where it’s the dawn of the
+                        internet that enables us to build a virtual world using augmented reality, virtual reality,
+                        artificial intelligence, and the internet of things. Artificial Intelligence with Machine
+                        Learning is the most reviewed and worked on course right now.<br> The most fundamental aspect of
+                        solving a problem is to learn.
+                        <a href="https://medium.com/artificial-intelligence-usm-systems/a-glance-view-of-ai-technology-in-2020-e15a2e51a5d9"
+                            target="_blank">[1]</a></i></p>
+            </div>
+            <div class="w3-card-4 overview-margin w3-white">
+                <img src="Image/13.png" alt="AI in Healthcare" style="width:100%">
+                <div class="w3-container">
+                    <p>Most of us engage with <ins>artificial intelligence</ins> daily and often do not even realize it. Amazon Alexa, Pandora and Netflix, to name a few, all leverage AI technology to learn more about user profiles and preferences. These
+                        AI-based systems then use this knowledge to deliver a more personalized experience based on learned patterns of behavior.
+                    </p>
+                    <p>There are several industries that benefit from artificial intelligence and are likely to implement it on a larger scale in the future. For example, most of the “Big Four” tax and accounting firms already rely on AI to comb through,
+                        classify, arrange, and analyze millions of pages of client documents with higher accuracy rates and much faster processing speed (often on the order of 100x-1000x) than when the same work was done manually.
+                    </p>
+                    <p>Besides, the complexity and rise of data in healthcare means that artificial intelligence (AI) will increasingly be applied within the field. Several types of AI are already being employed by payers and providers of care, and life
+                        sciences companies. The key categories of applications involve diagnosis and treatment recommendations, patient engagement and adherence, and administrative activities. Although there are many instances in which AI can perform
+                        healthcare tasks as well or better than humans, implementation factors will prevent large-scale automation of healthcare professional jobs for a considerable period.
+                        <a href="https://www.softworksai.com/blog/the-state-of-artificial-intelligence-today" targer="_blank">[2]</a>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div id="Application" class="w3-container city w3-animate-left" style="display: none;text-align: justify;">
+            <h2 class="heading">The application of AI to healthcare</h2> <br>
+            <button class="btn table" style="font-family: 'Fira Sans', sans-serif; background-color: #a2dbffef;" onclick="showTable()">Click here to
+                show or hide table</button>
+            <div id="table1" class = "w3-animate-top">
+                <style type="text/css">
+                    .tg {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
+                    
+                    .tg td {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+                    
+                    .tg th {
+                        border-color: black;
+                        border-style: solid;
+                        border-width: 1px;
+                        font-family: Arial, sans-serif;
+                        font-size: 14px;
+                        font-weight: normal;
+                        overflow: hidden;
+                        padding: 10px 5px;
+                        word-break: normal;
+                    }
+                    
+                    .tg .tg-9wq8 {
+                        border-color: inherit;
+                        text-align: center;
+                        vertical-align: middle;
+                        font-family: 'Fira Sans', sans-serif;
+                    }
+                    
+                    .tg .tg-c3ow {
+                        border-color: inherit;
+                        text-align: center;
+                        vertical-align: top;
+                        font-family: 'Fira Sans', sans-serif;
+                    }
+                    
+                    .tg .tg-7btt {
+                        border-color: inherit;
+                        font-weight: bold;
+                        text-align: center;
+                        vertical-align: top;
+                        font-family: 'Fira Sans', sans-serif;
+                    }
+                    
+                    .tg .tg-0pky {
+                        border-color: inherit;
+                        text-align: left;
+                        vertical-align: top;
+                        font-family: 'Fira Sans', sans-serif;
+                    }
+                </style>
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th class="tg-c3ow"><span style="font-weight:bold">Use Case or User Group</span></th>
+                            <th class="tg-7btt">Category</th>
+                            <th class="tg-7btt">Example of Applications</th>
+                            <th class="tg-7btt">Technology</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tg-9wq8" rowspan="4">Patients and families</td>
+                            <td class="tg-0pky">Health monitoring <br>Benefit/risk assessment</td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Devices and wearables</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Smartphone and tablet apps, websites</span></td>
+                            <td class="tg-0pky">Machine learning, natural language processing (NPL), speech recognition, chatbots
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">Disease prevention and management</td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Obesity reduction</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Diabetes prevention and management</span><br>
+                                <span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Emotional and mental health support</span>
+                            </td>
+                            <td class="tg-0pky">Conversational AI, NLP, speech recognition, chatbots</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">Medication management</td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Medication adherence</span></td>
+                            <td class="tg-0pky">Robotic home teleheath</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">Rehabilitation</td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Stroke rehabilitation using apps and robots</span></td>
+                            <td class="tg-0pky">Robotics</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-9wq8" rowspan="4">Clinician care teams</td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Early
+                                    detection, prediction, and diagnostics tools</span></td>
+                            <td class="tg-0pky">• Imaging for cardiac arrhythmia detection, retinopathy<br>• Early cancer detection (e.g., melanoma) </td>
+                            <td class="tg-0pky">Machine learning</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">Surgical procedures <br></td>
+                            <td class="tg-0pky">• Remote-controlled robotic surgery<br>• AI-supported surgical roadmaps
+                            </td>
+                            <td class="tg-0pky">Robotics, machine learning <br></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">Precision medicine </td>
+                            <td class="tg-0pky">• Personalized chemotherapy treatment </td>
+                            <td class="tg-0pky"> Supervised machine learning, reinforcement learning </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky">Patient safety and experience </td>
+                            <td class="tg-0pky">• Early detection of sepsis </td>
+                            <td class="tg-0pky">Machine learning</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-9wq8" rowspan="3">Public health program managers </td>
+                            <td class="tg-0pky">Identification of individuals at risk </td>
+                            <td class="tg-0pky">• Suicide risk identification using social media</td>
+                            <td class="tg-0pky">Deep learning (convolutional and recurrent neural networks)</td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Population
+                                    health</span></td>
+                            <td class="tg-0pky">• Eldercare monitoring </td>
+                            <td class="tg-0pky">Ambient AI sensors </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Population
+                                    health</span></td>
+                            <td class="tg-0pky">• Air pollution epidemiology<br>• Water microbe detection </td>
+                            <td class="tg-0pky">Deep learning, geospatial pattern mining, machine learning </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-9wq8" rowspan="4">Administrators</td>
+                            <td class="tg-0pky">International Classification of Diseases, 10th Rev. (ICD-10) coding
+                            </td>
+                            <td class="tg-0pky">• Automatic coding of medical records for reimbursement </td>
+                            <td class="tg-0pky">Machine learning, NLP </td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Fraud
+                                    detection</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Health care billing fraud</span><br><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Detection of unlicensed providers</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Supervised,
+                                    unsupervised, and hybrid machine learning</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Cybersecurity</span>
+                            </td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Protection of personal health information</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Machine
+                                    learning, NLP</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Physician
+                                    management</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Assessment of physician competence</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Machine
+                                    learning, NLP</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-9wq8" rowspan="3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Researchers</span>
+                            </td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Genomics</span>
+                            </td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Analysis of tumour genomics</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Integrated
+                                    cognitive computing</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Disease
+                                    prediction</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Prediction of ovarian cancer</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Neural
+                                    networks</span></td>
+                        </tr>
+                        <tr>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Discovery</span>
+                            </td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">•
+                                    Drug discovery and design</span></td>
+                            <td class="tg-0pky"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Machine
+                                    learning, computer-assisted synthesis</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a href="https://nam.edu/wp-content/uploads/2019/12/AI-in-Health-Care-PREPUB-FINAL.pdf?fbclid=IwAR1WHbrbeQG4ErpqR87cB7VLC2CdhtL4EWb7KxnMnnFsVhVziU29sH96SKM" target="_blank">[3]</a>
+            <br> <br>
+            <img src="Image//1.png " class="center-img"> <br>
+            <div class="w3-bar w3-border w3-card-4" style="background-color: #386a8d; color: ivory;">
+                <button class="w3-bar-item w3-button link" onclick="openIndex(event, 'PnF')" style=" width:17%; font-family: 'Fira Sans', sans-serif;" id="defaultOpen1">AI sollutions for patients and
+                    families</button>
+                <button class="w3-bar-item w3-button link" onclick="openIndex(event, 'Clinician')" style="width:16.6%; height: 61px;font-family: 'Fira Sans', sans-serif;">Clinician care</button>
+                <button class="w3-bar-item w3-button link" onclick="openIndex(event, 'PublicHealth')" style=" width:16.6%; font-family: 'Fira Sans', sans-serif;">Public health program managers</button>
+                <button class="w3-bar-item w3-button link" onclick="openIndex(event, 'Admini')" style="width:16.6%; height: 61px;font-family: 'Fira Sans', sans-serif;">Administrators</button>
+                <button class="w3-bar-item w3-button link" onclick="openIndex(event, 'Cyber')" style=" width:16.6%; height: 61px; font-family: 'Fira Sans', sans-serif;">Cybersecurity</button>
+                <button class="w3-bar-item w3-button link" onclick="openIndex(event, 'Research')" style="width:16.6%; height: 61px;font-family: 'Fira Sans', sans-serif;">Researches</button>
+            </div>
+            <div id="PnF" class="w3-container w3-border w3-animate-right       index" style="display: none;text-align: justify; ">
+                <br>
+                <strong style="font-size: 24px;">AI solutions for patients and families</strong>
+                <p>AI could soon play an important role in the self-management of chronic diseases such as cardiovascular diseases, diabetes, and depression. Self-management can be assisted by AI solutions, including <i>conversational agents, health monitoring and risk prediction tools, personalized
+                        adaptive interventions, and technologies</i>to address the needs of individuals with disabilities.</p>
+                <ol type="a"><strong style="font-family: 'Fira Sans', sans-serif;">
+                        <li>Health monitoring/ Disease prevention and management</li>
+                    </strong> <br>
+                    <ul>
+                        <li style="font-family: 'Fira Sans', sans-serif;"><i>Conversational agents</i> can engage in two-way dialogue with the user via speech recognition, natural language processing (NLP), natural language understanding, and natural language generation (Laranjo et al., 2018). AI is
+                            behind many of them. These interfaces may include text-based dialogue, spoken language, or both. They are called, variously, virtual agents, chatbots, or chatterbots. Some conversational agents present a human image (e.g.,
+                            the image of a nurse or a coach) or nonhuman image (e.g., a robot or an animal) to provide a richer interactive experience. Most adults say they would use an intelligent virtual coach or an intelligent virtual nurse to monitor
+                            health and symptoms at home.
+                        </li>
+                        <br>
+                        <img src="Image/2.png" alt="Figure 2" class="center-img">
+                        <br>
+                        <li style="font-family: 'Fira Sans', sans-serif;"><i>Health monitoring and risk prediction
+                                tools</i>: AI can use raw data from accelerometers, gyroscopes, microphones, cameras, and other sensors, including smartphones. Machine-learning algorithms can be trained to recognize patterns from the raw data inputs and
+                            then categorize these patterns as indicators of an individual’s behaviour and health status. These systems can allow patients to understand and manage their own health and symptoms as well as share data with medical providers.
+                        </li> <br>
+                        <li style="font-family: 'Fira Sans', sans-serif;"><i>Smart home monitoring and robotics</i>may eventually use AI to address these challenges (Rabbitt et al., 2015). Home monitoring has the potential to increase independence and improve aging at home by monitoring physical space,
+                            falls, and amount of time in bed. Currently available social robots such as PARO, Kabochan, and PePeRe provide companionship and stimulation for dementia patients. Recently, the use of robotic pets has been reported to be helpful
+                            in reducing agitation in nursing home patients with dementia. For example, PARO is a robot designed to look like a cute, white baby seal that helps calm patients in hospitals and nursing homes.
+                        </li> <br>
+                        <li style="font-family: 'Fira Sans', sans-serif;"><i>Timely personalized interventions</i>: These are learning systems that deliver dynamic, personalized treatment to users over time. The JITAI makes decisions about when and how to intervene based on response to prior intervention,
+                            as well as on awareness of current context, whether internal (mood, anxiety, blood pressure), or external (e.g., location, activity). JITAI assistance is provided when users are most in need of it or will be most receptive
+                            to it. These systems can also tell a clinician when a problematic pattern is detected. These interventions rely on sensors, rather than a user’s self-report, to detect states of vulnerability or intervention opportunity.
+                        </li>
+                    </ul> <br>
+                    <strong>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Medication management</li>
+                    </strong> <br>
+                    <img src="Image/3.png" alt="Figure 3" class="center-img"> <br>
+                    <p>Medical devices for hospitals and other health care groups, the system is a robot that provides caregivers with day-to-day insights into a patient’s adherence to both prescribed and over-the-counter medication therapy. The system can
+                        schedule medication doses, providing reminder alerts, dispensing medication at the scheduled time, and provide the user with fast access to family or caregivers through a simple voice command and built-in camera for two-way video
+                        calls. For example, Pria robot is powered by <ins>Pillo Health</ins>.
+                    </p>
+                    <strong style="font-family: 'Fira Sans', sans-serif;">
+                        <li>Rehabilitation</li>
+                    </strong>
+                    <p>Rehabilitation robots fall into two main classes: robots designed to compensate for lost skills, including manipulation, self-feeding, or mobility; and those developed to remediate or retrain lost motor function after a disabling event.
+                        Robotic devices in this second class include low-impedance machines specifically designed for rehabilitation and industrial robots that have been reconfigured for therapy purposes.
+                    </p>
+                </ol>
+            </div>
+            <div id="Clinician" class="w3-container w3-border w3-animate-right index" style="display: none;text-align: justify; ">
+                <br>
+                <strong style="font-size: 24px;">Clinician care</strong>
+                <p>The amount of relevant data available for patient care is growing and will continue to grow in volume and variety. Clinicians are beginning to have access to data generated from wearable devices, social media, and public health records
+                    and to the many types of data specific to an individual.
+                </p>
+                <ol type="a"><strong>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Early detection, prediction, and diagnostics
+                        </li>
+                    </strong> <br>
+                    <ol type="I"><i>
+                            <li style="font-family: 'Fira Sans', sans-serif;">AI Helps to Reduce Manual Errors and
+                                Improve Diagnostic Process</li>
+                        </i>
+                        <p>The most exciting artificial intelligence healthcare applications help doctors to improve diagnostic procedures. Today’s healthcare industry, specifically in developed markets like the USA, is highly using AI for accurately predicting
+                            the patient’s disease faster than medical professionals do.
+                        </p>
+                        <p>The healthcare segment is an open area that needs the support of more intelligent technologies. Using AI tools and devices, healthcare service providers are providing improved healthcare services. A noteworthy point is that the
+                            implementation of AI technologies in healthcare is essential. It will greatly alter the way of diagnosing life-threatening diseases.
+                        </p>
+                        <p>The healthcare segment is an open area that needs the support of more intelligent technologies. Using AI tools and devices, healthcare service providers are providing improved healthcare services. A noteworthy point is that the
+                            implementation of AI technologies in healthcare is essential. It will greatly alter the way of diagnosing life-threatening diseases.
+                        </p>
+                        <p>Few diseases are difficult to diagnose like oncology and cardiology diseases. However, AI-based diagnosis apps help doctors to provide treatment at the right time. In addition, Machine Learning (ML) and deep learning algorithms
+                            are also used in healthcare. These technologies enable machines to learn from data and deliver insights into patient’s data. Hence, the doctors can check and analyse the severity level of the disease.
+                        </p>
+                        <p>Likewise, AI-based wearable is developed to detect cardiac diseases in early phases. Thus, AI devices together with IoT & cloud avoid human errors and automate diagnosing process.
+                        </p>
+                        <p>Example:</p>
+                        <ul type="circle">
+                            <li style="font-family: 'Fira Sans', sans-serif;"> PathAI (Austin, Texas and Boston, Massachusetts) delivers an AI-powered pathology solution using Machine Learning (ML) and deep learning algorithms to assist pathologists in fast diagnosing and providing treatment for today’s
+                                challenging diseases.
+                            </li>
+                            <li style="font-family: 'Fira Sans', sans-serif;">Buoy Health (Boston, Massachusetts) has developed an AI-powered health assistant. Buoy’s AI assistant can listen to your symptoms and guide you take the proper treatment based on its diagnosis.
+                            </li>
+                            <li style="font-family: 'Fira Sans', sans-serif;">Enlitic, Inc (San Francisco, California) is striving to build a bridge between human and emerging AI technology to advance the process of medical diagnosis.
+                            </li>
+                        </ul> <br>
+                        <i>
+                            <li style="font-family: 'Fira Sans', sans-serif;">AI for image analysis</li>
+                        </i>
+                        <p>Manual image analysis takes too long time and leaves minimum human errors. But, Artificial Intelligence machines using deep learning can view and scan thousands of medical images and detect patterns of various diseases. This feature
+                            of AI allows healthcare providers to diagnose a disease exactly.
+                        </p>
+                        <p>Radiology - AI solutions are being developed to automate image analysis and diagnosis. This can help highlight areas of interest on a scan to a radiologist, to drive efficiency and reduce human error enable instant interpretation
+                            in under-served geographies or after hours.
+                        </p>
+                        <p>Therefore, artificial intelligence is a pillar to get the next-level of tools for radiology. AI-based radiology tools need not to depend on tissue samples. Moreover, through Artificial intelligence-powered image analysis, healthcare
+                            service providers can also perform can also aid their patients who are in remote locations. Telemedicine service is the best example for this scenario. This innovative healthcare service allows patients to send images of rashes,
+                            cuts, etc. It helps doctors to determine the disease and provide necessary treatment.
+                        </p>
+                        <img src="Image/4.png" alt="Figure 4" class="center-img"> <br>
+                        <i>
+                            <li style="font-family: 'Fira Sans', sans-serif;">Preliminary Diagnosis</li>
+                        </i>
+                        <p>Correct diagnosis is the cornerstone of practising machine. The sooner the diagnosis, the better the treatment will be. AI applications use data architecture to improve the accuracy of the preliminary diagnosis.
+                        </p>
+                    </ol>
+                    <strong>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Surgical procedures</li>
+                    </strong> <br>
+                    <img src="Image/5.png" alt="Figure 5" class="center-img"> <br>
+                    <p>In the recent past, the healthcare industry is observing a skyrocket growth in performing robot-assisted surgical functions. Robot-assisted surgeries offer less pain and quick recovery time. Therefore, the use of robots optimizes the
+                        process of surgery and reduced errors that are may happen with physicians.
+                    </p>
+                    <p>Investments in AI-based robots are continuing to climb in the fast few years, especially in the healthcare sector. Intelligent robots can analyse data from previous medical logs. Based on medical reports of a patient, robots can guide
+                        & control a surgeon’s instrument all through surgery. This process will reduce the time of the patient’s hospital stay. Robot-assisted surgery minimizes surgical incisions, and hence it is considered as minimally invasive surgery.
+                    </p>
+                    <p>It brings to bear diverse sources of information, including patient risk factors, anatomic information, disease natural history, patient values and cost, to help physicians and patients make better predictions regarding the consequences
+                        of surgical decisions. For instance, a deep learning model was used to predict which individuals with treatment resistant mesial temporal lobe epilepsy would most likely benefit from surgery.
+                    </p>
+                    <p><i>The da Vinci Surgical System</i>: It is a robotic surgical system developed by Intuitive Surgical Inc. (An American manufacturer of robotic products). It can enhance the patient’s outcome by performing minimally invasive surgery.
+                        This intelligent system allows doctors to do difficult surgical process with more confidence and control. But, sure this benefit cannot be achieved using traditional surgical methods.
+                    </p>
+                    <img src="Image/6.png" alt="Figure 6" class="center-img"> <br>
+                    <p>Further, robots automatically learn from medical records. Hence, the positive results delivered by intelligent robots are really helpful for physicians.
+                    </p>
+                    <strong>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Precision medicine</li>
+                    </strong>
+                    <p>Even a little drop of medicine can make a huge difference. So it is important to keep the dosage of a patient absolutely perfect, or else there might be reparations to pay. The application is designed to reduce the margin of medical
+                        errors that may occur when giving medicines to patients.
+                    </p>
+                    <p>Data management is the most widely used application of artificial intelligence and digital automation. Robots collect, store, re-format, and trace data to provide faster, more consistent access.
+                    </p>
+                    <p>AI applications can be used to monitor the use of medication by patients. There is a webcam arrangement which automatically relays information regarding how a patient is taking their prescription medicines. This also helps in better
+                        management of the condition if it is serious.
+                    </p>
+                    <img src="Image/7.png" alt="Figure 7" class="center-img"> <br>
+                    <b>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Patient safety and experience</li>
+                    </b><small>(AI-based Virtual Nursing Assistants)</small>
+                    <p>Patient engagement and adherence has long been seen as the ‘last mile’ problem of healthcare – the final barrier between ineffective and good health outcomes. The more patients proactively participate in their own well-being and care,
+                        the better the outcomes – utilisation, financial outcomes and member experience. These factors are increasingly being addressed by big data and AI.
+                    </p>
+                    <p>These assistants reduce hospital visits and also lessen the load on physicians. Virtual nursing assistants can efficiently interact with the patients and direct then to get better healthcare services from doctors. AI-based devices
+                        can convert voice-to-text. This ability of AI helps doctors to recommend drugs/medications to the patients.
+                    </p>
+                    <p>As virtual assistants provide 24/7 services, they can support and monitor patients conditions continuously. Quick response to patient’s queries is also the best feature of virtual assistants.
+                    </p>
+                    <p>Artificial intelligence technology helps hospitals, doctors, as well as clinics to better serve their patients.
+                    </p>
+                    <p><i><ins>Example:</ins></i></p>
+                    <ul type="circle">
+                        <li style="font-family: 'Fira Sans', sans-serif;"><strong>Qventus, Inc</strong>(Mountain View, California) is the best AI-powered software help patients in overcoming operational challenges in the hospital. Starting from emergency departments and surgery units to patient safety,
+                            Qventus software efficiently manages the flow of in-patients and outpatients. Thus, this Ai-powered healthcare solution boosts decisions in hospitals to improve service quality and experience.
+                        </li>
+                        <li style="font-family: 'Fira Sans', sans-serif;"><strong>CloudMedX</strong>AI platform uses ML algorithms to continuously track and manage the patient journey across the healthcare system. It helps hospitals better manage their patient’s data including date of admission, medical
+                            information, and also payment data. So, healthcare providers using these data can easily deal with patients when they discharged without any confusion.
+                        </li>
+                    </ul> <br>
+                    <strong>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Treatment design</li>
+                    </strong>
+                    <p>There are elaborate artificial intelligence systems which exist in the healthcare sector that are designed to store and analyze data. Whether it be notes and reports from a patient’s file, clinical expertise or external research, the
+                        application will help you to narrow down the correct and customized treatment path for a patient.
+                    </p>
+                </ol>
+            </div>
+            <div id="PublicHealth" class="w3-container w3-border w3-animate-right index" style="display: none;text-align: justify; ">
+                <br>
+                <strong style="font-size: 24px;">Public health program managers</li></strong>
+                <p>Population health examines the distribution of health outcomes within a population, the range of factors that influence the distribution of health outcomes, and the policies and interventions that affect those factors.
+                </p>
+                <p><i><ins>AI can help identify specific demographics or geographical locations where the prevalence of
+                            disease or high-risk behaviours existing.
+                        </ins></i></p>
+                <p>Example: Shin et al. (2018) applied a machine learning approach that uses both biomarkers and social markers to predict and identify paediatric asthma patients at risk of hospital revisits.
+                </p>
+                <p><i>AI tools: enabled by the availability of data from administrative claims and EHRs, machine
+                        learning can enable prediction, which moves beyond average population effects to consider
+                        personalized benefits and risks</i>. They are used in areas of automated retinal screening, clinical decision support, predictive population risk stratification, and patient self-management tools.
+                </p>
+                <p>Example: Medtronic’ s Guardian Connect, marking the first AI-powered continuous glucose monitoring system.
+                </p>
+                <img src="Image/11.jpg" alt="Figure 11" class="center-img">
+            </div>
+            <div id="Admini" class="w3-container w3-border w3-animate-right index" style="display: none;text-align: justify; ">
+                <br>
+                <strong style="font-size: 24px;">Administrators</li></strong>
+                <ol type="I">
+                    <i>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Administrative applications</li>
+                    </i>
+                    <p>This application will help healthcare providers deal with critical matters. It will help to maximize the time given by nurses, doctors to their jobs, and make their daily tasks easier. It allows for an easier integration process with
+                        the existing technological infrastructure. It can help keep a record of all treatments and patients to allow predictive diagnosis.
+                    </p>
+                    <p> The technology that is most likely to be relevant to this objective is RPA. It can be used for a variety of applications in healthcare, including claims processing, clinical documentation, revenue cycle management and medical records
+                        management.
+                    </p>
+                    <p>Some healthcare organisations have also experimented with chatbots for patient interaction, mental health and wellness, and telehealth. These NLP-based applications may be useful for simple transactions like refilling prescriptions
+                        or making appointments.
+                    </p>
+                    <p>This could help healthcare industry to save approximately $18- $20 billion every year. AI-powered machines are well trained to perform all administrative tasks with more accuracy and efficiency.
+                    </p>
+                    <img src="Image/12.jpg" alt="Figure 12" class="center-img">
+                    <i>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Coding</li>
+                    </i>
+                    <p>Coding is an exacting, expert-driven process that extracts information from EHRs for claims submissions and risk adjustment.
+                    </p>
+                    <p>It is a human-labor-intensive process that requires an understanding of language, expertise in clinical terminology, and a nuanced, expert understanding of administrative coding of medical care.
+                    </p>
+                    <p>Including a wide variety of structured data, such as medication orders, laboratory tests, and vital signs.
+                    </p>
+                    <i>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Fraud Detection</li>
+                    </i>
+                    <p>As people are becoming desperate for better medical services at a lower cost, the number of fraud cases is also increasing. Both patients and medical institutions can suffer damage because of fraud. This AI application will help to
+                        navigate through elaborate payment and service fraud attempts.
+                    </p>
+                    <img src="Image/14.png" alt="Figure 14" class="center-img">
+                </ol>
+            </div>
+            <div id="Cyber" class="w3-container w3-border w3-animate-right index" style="display: none;text-align: justify; ">
+                <br>
+                <strong style="font-size: 24px;">Cybersecurity</li></strong>
+                <p>The healthcare sector is one of the targeted industries for hackers. The industry is highly prone to attacks. Hackers will always try to hack the values healthcare records to sell in the black market and earn profits from it. Data breaches
+                    cost the healthcare industry approximately $5.6 billion every year, according to Becker’s Hospital Review.
+                </p>
+                <p>The healthcare sector is one of the targeted industries for hackers. The industry is highly prone to attacks. Hackers will always try to hack the values healthcare records to sell in the black market and earn profits from it. Data breaches
+                    cost the healthcare industry approximately $5.6 billion every year, according to Becker’s Hospital Review.
+                </p>
+                <p>AI in medical fields gives tremendous benefits. This is one of them. AI technology helps to segment the vast medical database and make the data process seamless.
+                </p>
+                <img src="Image/8.png" alt="Figure 8" class="center-img"> <br>
+            </div>
+            <div id="Research" class="w3-container w3-border w3-animate-right index" style="display: none;text-align: justify; ">
+                <br>
+                <strong style="font-size: 24px;">Researches</li></strong>
+                <ol type="I">
+                    <i>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Genomics</li>
+                    </i>
+                    <p>Genetics and genetics look for mutations and links to disease from information in DNA. With the help of AI, body scans can detect cancer and vascular diseases in advance and predict the health risks people will face based on their
+                        genetics.
+                    </p>
+                    <i>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Disease prediction</li>
+                    </i>
+                    <p>Both providers and payers for care are also using ‘population health’ machine learning models to predict populations at risk of particular diseases or accidents or to predict hospital readmission. These models can be effective at prediction,
+                        although they sometimes lack all the relevant data that might add predictive capability, such as patient socioeconomic status.</p>
+                    <p>The recent success of deep learning in disparate areas of machine learning has driven a shift towards machine learning models that can learn rich, hierarchical representations of raw data with little pre processing and produce more
+                        accurate results.
+                    </p>
+                    <p>The k-mean algorithm is used to predict diseases using patient treatment history and health data.
+                    </p>
+                    <img src="Image/9.png" alt="Figure 9" class="center-img"> <br>
+                    <i>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Discovery</li>
+                    </i>
+                    <p>Machine learning has the capacity to make drug discovery faster, cheaper, and more effective.</p>
+                    <p>Drug designers frequently apply machine learning techniques to extract chemical information from large compound databases and to design drugs with important biological properties.</p>
+                    <p>Machine learning can also improve drug discovery by permitting a more comprehensive assessment of cellular systems and potential drug effects.</p>
+                    <p>These include:</p>
+                    <ul type="square">
+                        <li style="font-family: 'Fira Sans', sans-serif;">Predicting synthesis.</li>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Biological activity of new ligands.</li>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Drug selectivity.</li>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Modeling polypharmacy side effects (due to drug–drug interactions).</li>
+                        <li style="font-family: 'Fira Sans', sans-serif;">Designing de novo molecular structures and structure-activity models.</li>
+                    </ul>
+                    <p>AI solutions are being developed to improve drug efficiency and to reduce development costs, identify new potential therapies from vast databases of information on existing medicines.This could improve the efficiency and success rate
+                        of drug development, accelerating the process to bring new drugs to market in response to deadly disease threats.
+                    </p>
+                    <p>Atomwise (San Francisco, California) is the best instance that uses Artificial intelligence for drug development that help to treat Ebola and multiple sclerosis.
+                    </p>
+                    <img src="Image/10.png" alt="Figure 10" class="center-img"> <br>
+                </ol>
+            </div>
+            <a href="https://mobisoftinfotech.com/resources/blog/top-15-ai-applications-in-healthcare/?fbclid=IwAR1T_R-0ZB2uttExQztza8BuU8aaldeteE_sTPIhv-MWFO1UdxSjAjXquDs" targer="_blank">[4]</a>
+        </div>
+
+        <div id="Types" class="w3-container city w3-animate-bottom" style="display: none;text-align: justify;">
+            <h2 class="heading">Types of AI of relevance to healthcare<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6616181/" target="_blank">[5]</a></h2> <br>
+         
+                <div class="w3-container" style="background-color: #9bc9eb;">
+                    <ul type="square">
+                    <b>
+                    <li class="w3-xxxlarge" style="color: rgb(25, 26, 116) ">Machine learning-neural network and deep learning
+                    </li>
+                    </b>
+                    <hr style="width:100px;border:5px solid rgb(25, 26, 116)" class="w3-round">
+                    <p>Machine learning is a statistical technique for fitting models to data and to ‘learn’ by training models with data. It requires a training dataset for learning.</p>
+                    <p>A more complex form of machine learning is the neural network. It views problems in terms of inputs, outputs and weights of variables or ‘features’ that associate inputs with outputs.</p>
+                </div>
+                <div class="w3-container" style="background-color: #d2e6f7;">
+                    <b>
+                    <li class="w3-xxxlarge" style="color: rgb(25, 26, 116) ">Natural language processing</li>
+                </b>
+                    <hr style="width:100px;border:5px solid rgb(25, 26, 116)" class="w3-round">
+                    <p>This field, NLP, includes applications such as speech recognition, text analysis, translation and other goals related to language. There are two basic approaches to it: statistical and semantic NLP. Statistical NLP is based on machine
+                        learning (deep learning neural networks in particular) and has contributed to a recent increase in accuracy of recognition. It requires a large ‘corpus’ or body of language from which to learn.</p>
+                    <p>NLP systems can analyse unstructured clinical notes on patients, prepare reports (eg on radiology examinations), transcribe patient interactions and conduct conversational AI.</p>
+                </div>
+                <div class="w3-container" style="background-color: #9bc9eb;">
+                    <b>
+                    <li class="w3-xxxlarge" style="color: rgb(25, 26, 116) ">Rule-based expert systems</li>
+                </b>
+                    <hr style="width:100px;border:5px solid rgb(25, 26, 116)" class="w3-round">
+                    <p>Expert systems based on collections of ‘if-then’ rules. Many electronic health record (EHR) providers furnish a set of rules with their systems today.</p>
+                    <p>Expert systems require human experts and knowledge engineers to construct a series of rules in a particular knowledge domain. However, when the number of rules is large (usually over several thousand) and the rules begin to conflict
+                        with each other, they tend to break down. Moreover, if the knowledge domain changes, changing the rules can be difficult and timeconsuming. They are slowly being replaced in healthcare by more approaches based on data and machine
+                        learning algorithms.
+                    </p>
+                </div>
+                <div class="w3-container" style="background-color: #d2e6f7;">
+                    <b>
+                    <li class="w3-xxxlarge" style="color: rgb(25, 26, 116) ">Physical Robots</li>
+                </b>
+                    <hr style="width:100px;border:5px solid rgb(25, 26, 116)" class="w3-round">
+                    <p>Physical robots perform predefined tasks like lifting, repositioning, welding or assembling objects in places like factories and warehouses, and delivering supplies in hospitals. More recently, robots have become more collaborative
+                        with humans and are more easily trained by moving them through a desired task.
+                    </p>
+                </div>
+                <div class="w3-container" style="background-color: #9bc9eb;">
+                    <b>
+                    <li class="w3-xxxlarge" style="color: rgb(25, 26, 116) ">Robotic process automation</li>
+                </b>
+                    <hr style="width:100px;border:5px solid rgb(25, 26, 116)" class="w3-round">
+                    <p>This technology performs structured digital tasks for administrative purposes, ie those involving information systems, as if they were a human user following a script or rules. Robotic process automation (RPA) doesn’t really involve
+                        robots – only computer programs on servers. When combined with other technologies like image recognition, they can be used to extract data from, for example, faxed images in order to input it into transactional systems.
+                    </p>
+                </div>
+            </ul>
+        </div>
+
+        <div id="Compare" class="w3-container city w3-animate-right" style="display: none;text-align: justify;">
+            <h2 class="heading">The difference between healthcare using AI and traditional method</h2>
+            <div class="container">
+                <img src="Image/17.jpeg" class="image">
+                <div class="overlay1">
+
+                    <div class="text">
+                        <div>
+                            <h3 style="font-family: 'Fira Sans', sans-serif;padding-left: 36px;">Advantages</h3>
+                            <ul type="circle">
+                                <li style="font-family: 'Fira Sans', sans-serif">Ability to identify early detection of high-risk diseases.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Better data-driven decisions.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Increased disease diagnosis efficiency.
+                                </li>
+                                <li style="font-family: 'Fira Sanss', sans-serif">Provides efficient medical treatment.
+                                </li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Integrating information such as medical records with operating metrics<br> which can help assist physicians.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Automation of routine, time-consuming tasks like claims review.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Enhanced tracking and documentation of decision making</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Care coordination, case management and remote monitoring</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Reducing unnecessary hospital visits by alerting staff only when patient care <br> is needed.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Creating time-saving administrative duties such as voice-to-text transcription.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Possibility to save on medical expenses.
+                                </li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Can lower the cost of chronic disease management.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <img src="Image/18.jpeg" class="image">
+                <div class="overlay2">
+                    <div class="text">
+                        <div>
+                            <h3 style="font-family: 'Fira Sans', sans-serif;padding-left: 36px;">Disadvantages</h3>
+                            <ul type="circle">
+                                <li style="font-family: 'Fira Sans', sans-serif">Concerns regarding privacy & security.
+                                </li>
+                                <li style="font-family: 'Fira Sans', sans-serif">High initial capital requirement.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Potential lack of interoperability between AI solutions.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Ambiguous regulatory guideline for medical software.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Risk of inappropriate data dissemination.
+                                </li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Insufficient training of medical professionals.
+                                </li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Poor patient education and communication on benefits and disadvantages.</li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Blindness to emotional cues from patients.
+                                </li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Potential for increase unemployment.
+                                </li>
+                                <li style="font-family: 'Fira Sans', sans-serif">Lack of compulsory ethical standards across the whole sector.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer style="text-align: center;">
+                <br>
+                <p style="color: #2b348a !important;">More details <a style="font-size: 15px !important;" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.insightbrief.net%2Fwp-content%2Fuploads%2FAI-in-Healthcare-Benefits-Challenges-Risks-InsightBrief.pdf%3Ffbclid%3DIwAR1r5UkSZmTkpWWCtjo3cVEtcnic75K5pmeOt1ytjwT691L5xEuO3wqIPKA&h=AT05okcMpXSkkFa46z-NgIaqjCPMM-QViz8t6eLOjkgQhkDlGsyGhDx4nHkTt0XPOtw-yr3iEshzP3e1wa1qGRzIgW-MLuerJ0HNtG48zP2HyhvJ0nr8vM3ldQmNAUVo-eWTWA"
+                        target="_blank">Link 1</a>
+                    <a style="font-size: 15px !important;" href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.chthealthcare.com%2Fblog%2Fartificial-intelligence-in-healthcare%3Ffbclid%3DIwAR25NINaAiZVL8NvbLP6jYLctgs0nOPjanbFSyCGZFS8L1f-iEMpJQd7520&h=AT05okcMpXSkkFa46z-NgIaqjCPMM-QViz8t6eLOjkgQhkDlGsyGhDx4nHkTt0XPOtw-yr3iEshzP3e1wa1qGRzIgW-MLuerJ0HNtG48zP2HyhvJ0nr8vM3ldQmNAUVo-eWTWA"
+                        target="_blank">Link 2</a>
+                </p>
+            </footer>
+        </div>
+
+        <div id="Potential" class="w3-container city w3-animate-top" style="display: none;text-align: justify;">
+            <h2 class="heading">Potential of AI in healthcare in the future</h2> <br> <br>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Image/51.png" alt="Avatar" style="width:400px;height:400px;">
+                        <h1>In workforce</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>
+                        <p style="text-align: center; font-size: 19px !important; padding-left: 10px; padding-right: 10px;">It also seems increasingly clear that AI systems will not replace human clinicians on a large scale, but rather will augment their efforts to care for patients. Over time, human clinicians may move toward tasks and job designs
+                            that draw on uniquely human skills like empathy, persuasion and big-picture integration. Perhaps the only healthcare providers who will lose their jobs over time may be those who refuse to work alongside artificial intelligence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner2">
+                    <div class="flip-card-front">
+                        <img src="Image/52.jpg" alt="Avatar" style="width:400px;height:400px;">
+                        <h1>Quality in health care</h1>
+                    </div>
+                    <div class="flip-card-back" style="background-color: #24497296 !important; color:aliceblue !important;">
+                        <span style="font-size:150px;line-height:0.6em;opacity:0.5">&#10078;</span>
+                        <p style="text-align: center; font-size: 19px !important; padding-left: 10px;padding-right: 10px ;">The future of AI in health care could include tasks that range from simple to complex — everything from answering the phone to medical record review, population health trending and analytics, therapeutic drug and device design,
+                            reading radiology images, making clinical diagnoses and treatment plans, and even talking with patients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner2">
+                    <div class="flip-card-front">
+                        <img src="Image/53.jpg" alt="Avatar" style="width:400px;height:400px;">
+                        <h1>Managing and analyzing</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>
+                        <p style="text-align: center; font-size: 19px !important; padding-left: 10px; padding-right: 10px;">A common application of deep learning in healthcare is recognition of potentially cancerous lesions in radiology images. Both radiomics and deep learn ing are most commonly found in oncology-oriented image analysis. Their combination
+                            appears to promise greater accuracy in diagnosis than the previous generation of automated tools for image analysis, known as computeraided detection or CAD.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="Image/54.jpg" alt="Avatar" style="width:400px;height:400px;">
+                        <h1>Hybrid models</h1>
+                    </div>
+                    <div class="flip-card-back" style="background-color: #24497296 !important; color:aliceblue !important;">
+                        <span style="font-size:150px;line-height:0.6em;opacity:0.5">&#10078;</span>
+                        <p style="text-align: center; font-size: 19px !important; padding-left: 10px; padding-right: 10px;">The best opportunities for AI/ML in healthcare over the next few years are hybrid models, where clinicians are supported in diagnosis, treatment planning, and identifying risk factors, but retain ultimate responsibility for the
+                            patient’s care. This will result in faster adoption by healthcare providers by mitigating perceived risk, and start to deliver measurable improvements in patient outcomes and operational efficiency at scale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" style="padding-left: 80px; width: 480px !important;">
+                <div class="flip-card-inner2">
+                    <div class="flip-card-front">
+                        <img src="Image/55.png" alt="Avatar" style="width:400px;height:400px;">
+                        <h1>Adaptability</h1>
+                    </div>
+                    <div class="flip-card-back">
+                        <span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>
+                        <p style="text-align: center; font-size: 17px !important; padding-left: 10px; padding-right: 10px;">The greatest challenge of AI in healthcare is not only its effectiveness but also its application in clinical practice. To be widely applied, AI systems integrated with EHR systems must be approved by agencies, highly compatible
+                            with other systems, and they must be taught to doctors, and updated in real time. These challenges will be overcome, but it will take a long time for these technologies to develop on their own. appears to promise greater accuracy
+                            in diagnosis than the previous generation of automated tools for image analysis, known as computeraided detection or CAD.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card" style="padding-left: 80px;width: 479px !important;">
+                <div class="flip-card-inner2">
+                    <div class="flip-card-front">
+                        <img src="Image/56.png" alt="Avatar" style="width: 400px ;height:400px;">
+                        <h1>A better patient journey</h1>
+                    </div>
+                    <div class="flip-card-back" style="background-color: #24497296 !important; color:aliceblue !important;">
+                        <span style="font-size:150px;line-height:0.6em;opacity:0.5">&#10078;</span>
+                        <p style="text-align: center; font-size: 14px !important;">Patient is likely to have access to wearable devices in the future to track blood glucose levels, heartbeat, ... which can be synchronized to a central monitoring system that recognizes abnormal pattern changes using ML. On recognition
+                            of an abnormal pattern change, the monitoring system can automatically notify the provider of the patient and instruct the patient to schedule an appointment. Furthermore, based on the information provided by the wearable monitoring
+                            system as well as the electronic medical record, a treatment-planning system may use a combination of NLP and ML to recommend adjustments to the current treatment plan to address the specific clinical situation of the patient.
+                            Registration and check-in kiosks with NLP and ML can save patients time, reduce resource costs at the front desk and increase the accuracy of information for the provider office and insurers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+
+
+
+    <script>
+        document.getElementById("defaultOpen1").click(); //Application
+        //bar for Application
+        function openIndex(evt, indexName) {
+            var i, x, links;
+            x = document.getElementsByClassName("index");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            links = document.getElementsByClassName("link");
+            for (i = 0; i < x.length; i++) {
+                links[i].className = links[i].className.replace("blue", "");
+            }
+            document.getElementById(indexName).style.display = "block";
+            evt.currentTarget.className += " blue";
+        }
+        //bar for Menu
+        function openLink(evt, animName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace("w3-indigo", "");
+            }
+            document.getElementById(animName).style.display = "block";
+            evt.currentTarget.className += " w3-indigo";
+        }
+        //Show/hide table
+        function showTable() {
+            var x = document.getElementById("table1");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        document.getElementById("defaultOpen").click(); //Overview
+    </script>
+
+</body>
+
+</html>
